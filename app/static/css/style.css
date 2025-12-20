@@ -1,0 +1,241 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 80px;
+    background-color: #ffffff;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    border-right: 1px solid #e0e0e0;
+}
+
+.logo {
+    margin-bottom: 40px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar nav ul li a {
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul li.active a,
+.sidebar nav ul li a:hover {
+    background-color: #eef2ff;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 80px; /* Sidebar width */
+    flex-grow: 1;
+    padding: 20px 40px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header .header-text h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+header .header-text p {
+    margin: 0;
+    color: #888;
+}
+
+.header-actions .date-picker,
+.header-actions .new-transaction {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.header-actions .date-picker {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+}
+
+.header-actions .new-transaction {
+    background-color: #4f46e5;
+    color: #fff;
+}
+
+/* Cards Section */
+.cards-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-icon {
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 50%;
+}
+.card-icon.saldo { background-color: #e0e7ff; }
+.card-icon.gasto { background-color: #ffe2e5; }
+.card-icon.meta { background-color: #dcfce7; }
+
+
+.card-info span {
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.card-info h2 {
+    margin: 5px 0;
+    font-size: 26px;
+}
+
+.card-info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.positive { color: #22c55e; }
+.negative { color: #ef4444; }
+
+
+/* Main Dashboard Sections */
+.main-dashboard {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.chart-container {
+    flex-basis: 65%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.insights-container {
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.insights-container h3, .insight h4 {
+    display: flex;
+    align-items: center;
+}
+
+.insights-container img {
+    margin-right: 8px;
+    height: 1em; /* Adjust size relative to font size */
+}
+
+.insights-container h3 {
+    margin-top: 0;
+}
+
+.insight {
+    background-color: #8b5cf6;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.insight h4 {
+    margin: 0 0 10px 0;
+}
+
+.insight p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Activity Section */
+.activity-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.activity-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity-section h3 {
+    margin: 0;
+}
+
+.activity-section .view-all {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.activity-section ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.activity-section ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.activity-section ul li:last-child {
+    border-bottom: none;
+}

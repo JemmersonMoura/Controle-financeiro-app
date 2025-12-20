@@ -1,2 +1,1 @@
-# Este projeto não possui dependências externas.
-# As bibliotecas utilizadas (os, json, datetime) são parte da biblioteca padrão do Python.
+Flask
